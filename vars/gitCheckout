@@ -1,0 +1,3 @@
+def call(String branch,String gitUrl){
+  checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/himavanthkj/Shell.git']]])
+}
